@@ -3,81 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Experience Table</title>
+
+    <!-- Link to Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- nav bar -->
-   <HEADER>
-    <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#work">WORK</a></li>
-        <li><a href="#resume">RESUME</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </ul>
-<!-- this is the home section -->
-    <section id="home">
-<h1>WELCOME TO MY PORTFOLIO</h1>
-<h5>FRONTEND DEVELOPER/REACT.JS/MERN STACK</h5>
-   </HEADER> 
-<main>
-    <!-- This is the about me section -->
-       <section id="about">
-        <h1>about me</h1>
-        <p  style="font-size: 20px;">I'm Yessine Charfi,a passionate front end developer specializing in React.js and MERN stack.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hIEZ8xpdBts?si=DkPq4eXaQswYpt7b" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-       </section>
-        
-    <!-- This is the work section -->
-    <section id ="work">
-        <ul>
-            <h1>My work</h1>
-            <li>.Project 1 E-commerce Website
-            <li>.Project 2 -Task Management App
-            <li>.Project 3 -Portfolio website
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-link">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#work" class="nav-link">WORK</a></li>
+            <li><a href="#resume" class="nav-link">RESUME</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
-    </section> 
-    <!-- This is the resume section -->
-    <section id="resume">
+    </header>
 
-        <h1>Resume</h1>
-    <table bgcolor="black">
-        <tr bgcolor="grey">
-            <th>Year</th>
-            <th>Experience</th>
-        </tr>
-        <tr bgcolor="white">
-            <td>2023</td>
-            <td>Frontend Developer at XYZ</td>
-        </tr>
-        <tr bgcolor="white">
-            <td>2024</td>
-            <td>MERN Stack Student</td>
-        </tr>
-    </table>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <h5>FRONTEND DEVELOPER / REACT.JS / MERN STACK</h5>
     </section>
-    <!-- This is the contact section -->
-    <section id="contact">
-        <h1>Contact Me</h1>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h1>About Me</h1>
+            <p style="font-size: 20px;">
+                I'm Yessine Charfi, a passionate front-end developer specializing in React.js and the MERN stack.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hIEZ8xpdBts?si=DkPq4eXaQswYpt7b" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <h1>My Work</h1>
+            <ul>
+                <li>Project 1 - E-commerce Website</li>
+                <li>Project 2 - Task Management App</li>
+                <li>Project 3 - Portfolio Website</li>
+            </ul>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <h1>Resume</h1>
+            <table bgcolor="black">
+                <tr bgcolor="grey">
+                    <th>Year</th>
+                    <th>Experience</th>
+                </tr>
+                <tr bgcolor="white">
+                    <td>2023</td>
+                    <td>Frontend Developer at XYZ</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>2024</td>
+                    <td>MERN Stack Student</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h1>Contact Me</h1>
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Your name please" value="Yessine">
+                <br>
+                <label>Email:</label>
+                <input type="email" placeholder="Your email" value="example@example.com">
+                <br>
+                <label for="message">Message:</label>
+                <div class="message-input">
+                    <input type="text" id="message" placeholder="Your message...">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
     </main>
-    <label>Name:</label>
-    <input type="text" placeholder="ur name pls" value="yessine">
-    <label>Email:</label> 
-    <input type="email" placeholder="Your email" value="example@example.com"><br>
-    <label for="message">Message:</label>
-    <div class="message-input">
-        <i class="fas fa-comment"></i> 
-        <input type="text" id="message" placeholder="Your message...">
-        <button>send</button>
-    </section>
-        <!-- This is the footer -->
-        <footer>
-            <p>2025 Yessine Charfi.All rights reserved.</p>
-        </footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>2025 Yessine Charfi. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
